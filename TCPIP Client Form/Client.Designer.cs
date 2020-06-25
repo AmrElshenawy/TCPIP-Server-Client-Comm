@@ -41,17 +41,17 @@
             // 
             // StopButton
             // 
-            this.StopButton.Location = new System.Drawing.Point(375, 44);
+            this.StopButton.Location = new System.Drawing.Point(322, 226);
             this.StopButton.Name = "StopButton";
-            this.StopButton.Size = new System.Drawing.Size(75, 23);
+            this.StopButton.Size = new System.Drawing.Size(125, 23);
             this.StopButton.TabIndex = 17;
-            this.StopButton.Text = "STOP!";
+            this.StopButton.Text = "Terminate Connection";
             this.StopButton.UseVisualStyleBackColor = true;
             this.StopButton.Click += new System.EventHandler(this.StopButton_Click);
             // 
             // MessagetextBox
             // 
-            this.MessagetextBox.Location = new System.Drawing.Point(15, 109);
+            this.MessagetextBox.Location = new System.Drawing.Point(15, 82);
             this.MessagetextBox.Multiline = true;
             this.MessagetextBox.Name = "MessagetextBox";
             this.MessagetextBox.Size = new System.Drawing.Size(326, 138);
@@ -59,7 +59,7 @@
             // 
             // SendButton
             // 
-            this.SendButton.Location = new System.Drawing.Point(375, 80);
+            this.SendButton.Location = new System.Drawing.Point(372, 56);
             this.SendButton.Name = "SendButton";
             this.SendButton.Size = new System.Drawing.Size(75, 23);
             this.SendButton.TabIndex = 15;
@@ -69,14 +69,15 @@
             // 
             // SendChattextBox
             // 
-            this.SendChattextBox.Location = new System.Drawing.Point(15, 83);
+            this.SendChattextBox.AcceptsReturn = true;
+            this.SendChattextBox.Location = new System.Drawing.Point(15, 56);
             this.SendChattextBox.Name = "SendChattextBox";
             this.SendChattextBox.Size = new System.Drawing.Size(326, 20);
             this.SendChattextBox.TabIndex = 14;
             // 
             // ConnectButton
             // 
-            this.ConnectButton.Location = new System.Drawing.Point(375, 15);
+            this.ConnectButton.Location = new System.Drawing.Point(372, 14);
             this.ConnectButton.Name = "ConnectButton";
             this.ConnectButton.Size = new System.Drawing.Size(75, 23);
             this.ConnectButton.TabIndex = 13;

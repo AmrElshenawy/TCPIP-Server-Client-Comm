@@ -83,14 +83,15 @@
             // 
             // SendChattextBox
             // 
-            this.SendChattextBox.Location = new System.Drawing.Point(15, 80);
+            this.SendChattextBox.AcceptsReturn = true;
+            this.SendChattextBox.Location = new System.Drawing.Point(15, 48);
             this.SendChattextBox.Name = "SendChattextBox";
             this.SendChattextBox.Size = new System.Drawing.Size(326, 20);
             this.SendChattextBox.TabIndex = 5;
             // 
             // SendButton
             // 
-            this.SendButton.Location = new System.Drawing.Point(375, 77);
+            this.SendButton.Location = new System.Drawing.Point(375, 48);
             this.SendButton.Name = "SendButton";
             this.SendButton.Size = new System.Drawing.Size(75, 23);
             this.SendButton.TabIndex = 6;
@@ -100,7 +101,7 @@
             // 
             // MessagetextBox
             // 
-            this.MessagetextBox.Location = new System.Drawing.Point(15, 106);
+            this.MessagetextBox.Location = new System.Drawing.Point(15, 74);
             this.MessagetextBox.Multiline = true;
             this.MessagetextBox.Name = "MessagetextBox";
             this.MessagetextBox.Size = new System.Drawing.Size(326, 138);
@@ -108,11 +109,11 @@
             // 
             // StopButton
             // 
-            this.StopButton.Location = new System.Drawing.Point(375, 41);
+            this.StopButton.Location = new System.Drawing.Point(325, 221);
             this.StopButton.Name = "StopButton";
-            this.StopButton.Size = new System.Drawing.Size(75, 23);
+            this.StopButton.Size = new System.Drawing.Size(125, 23);
             this.StopButton.TabIndex = 8;
-            this.StopButton.Text = "STOP!";
+            this.StopButton.Text = "Terminate Connection";
             this.StopButton.UseVisualStyleBackColor = true;
             this.StopButton.Click += new System.EventHandler(this.StopButton_Click);
             // 

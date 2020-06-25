@@ -32,6 +32,7 @@ namespace TCPIP_Server_Form
         {
             IPAddress localAdd = IPAddress.Parse(ServerIPtextBox.Text);
             listener = new TcpListener(localAdd, int.Parse(ServerPorttextBox.Text));
+            StartButton.Enabled = false;
             MessagetextBox.AppendText("Listening..." + newLine);
             listener.Start();
             client = listener.AcceptTcpClient();
@@ -47,7 +48,7 @@ namespace TCPIP_Server_Form
             string textToSend = SendChattextBox.Text;
             byte[] bytesToSend = ASCIIEncoding.ASCII.GetBytes(textToSend);
             MessagetextBox.AppendText("SENDING: " + textToSend + newLine);
-            nwStream.Write(buffer, 0, bytesRead);
+            nwStream.Write(bytesToSend, 0, textToSend.Length);
         }
 
         private void StopButton_Click(object sender, EventArgs e)

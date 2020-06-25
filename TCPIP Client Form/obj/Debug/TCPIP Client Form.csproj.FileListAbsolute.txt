@@ -7,3 +7,4 @@ I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Cl
 I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Client Form\obj\Debug\TCPIP Client Form.csproj.CoreCompileInputs.cache
 I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Client Form\obj\Debug\TCPIP Client Form.exe
 I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Client Form\obj\Debug\TCPIP Client Form.pdb
+I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Client Form\obj\Debug\TCPIP Client Form.csprojAssemblyReference.cache
