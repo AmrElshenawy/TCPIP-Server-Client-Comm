@@ -1,0 +1,9 @@
+I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Client Form\bin\Debug\TCPIP Client Form.exe.config
+I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Client Form\bin\Debug\TCPIP Client Form.exe
+I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Client Form\bin\Debug\TCPIP Client Form.pdb
+I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Client Form\obj\Debug\TCPIP_Client_Form.Client.resources
+I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Client Form\obj\Debug\TCPIP_Client_Form.Properties.Resources.resources
+I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Client Form\obj\Debug\TCPIP Client Form.csproj.GenerateResource.cache
+I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Client Form\obj\Debug\TCPIP Client Form.csproj.CoreCompileInputs.cache
+I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Client Form\obj\Debug\TCPIP Client Form.exe
+I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Client Form\obj\Debug\TCPIP Client Form.pdb
