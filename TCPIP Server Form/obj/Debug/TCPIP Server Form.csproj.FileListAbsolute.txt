@@ -8,3 +8,13 @@ I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Se
 I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Server Form\obj\Debug\TCPIP Server Form.csproj.CoreCompileInputs.cache
 I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Server Form\obj\Debug\TCPIP Server Form.exe
 I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Server Form\obj\Debug\TCPIP Server Form.pdb
+I:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server Form\bin\Debug\TCPIP Server Form.exe.config
+I:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server Form\bin\Debug\TCPIP Server Form.exe
+I:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server Form\bin\Debug\TCPIP Server Form.pdb
+I:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server Form\obj\Debug\TCPIP Server Form.csprojAssemblyReference.cache
+I:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server Form\obj\Debug\TCPIP_Server_Form.Server.resources
+I:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server Form\obj\Debug\TCPIP_Server_Form.Properties.Resources.resources
+I:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server Form\obj\Debug\TCPIP Server Form.csproj.GenerateResource.cache
+I:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server Form\obj\Debug\TCPIP Server Form.csproj.CoreCompileInputs.cache
+I:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server Form\obj\Debug\TCPIP Server Form.exe
+I:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server Form\obj\Debug\TCPIP Server Form.pdb

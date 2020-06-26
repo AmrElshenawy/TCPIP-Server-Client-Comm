@@ -5,3 +5,10 @@ I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Se
 I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Server\obj\Debug\TCPIP Server.csproj.CoreCompileInputs.cache
 I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Server\obj\Debug\TCPIP Server.exe
 I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Server\obj\Debug\TCPIP Server.pdb
+I:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server\bin\Debug\TCPIP Server.exe.config
+I:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server\bin\Debug\TCPIP Server.exe
+I:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server\bin\Debug\TCPIP Server.pdb
+I:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server\obj\Debug\TCPIP Server.csprojAssemblyReference.cache
+I:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server\obj\Debug\TCPIP Server.csproj.CoreCompileInputs.cache
+I:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server\obj\Debug\TCPIP Server.exe
+I:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server\obj\Debug\TCPIP Server.pdb
