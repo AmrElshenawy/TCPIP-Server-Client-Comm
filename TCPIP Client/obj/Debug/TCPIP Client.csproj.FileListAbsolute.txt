@@ -1,7 +1,0 @@
-I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Client\bin\Debug\TCPIP Client.exe.config
-I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Client\bin\Debug\TCPIP Client.exe
-I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Client\bin\Debug\TCPIP Client.pdb
-I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Client\obj\Debug\TCPIP Client.csprojAssemblyReference.cache
-I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Client\obj\Debug\TCPIP Client.csproj.CoreCompileInputs.cache
-I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Client\obj\Debug\TCPIP Client.exe
-I:\Documents\Personal Files\C# Projects\server client test\TCPIP Server\TCPIP Client\obj\Debug\TCPIP Client.pdb
