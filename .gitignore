@@ -1,2 +1,2 @@
-TCPIP Client/
-TCPIP Server/
+.TCPIP Client/*
+.TCPIP Server/*
