@@ -18,9 +18,6 @@ namespace TCPIP_Server_Form
         string newLine = Environment.NewLine;
         public TcpListener listener;
         private TcpClient client;
-        //public NetworkStream nwStream;
-        //public byte[] buffer;
-        //public int bytesRead;
         public StreamReader STR;
         public StreamWriter STW;
         public string receive;
@@ -35,25 +32,7 @@ namespace TCPIP_Server_Form
             this.Text = "SERVER";
             ServerIPtextBox.Text = SERVER_IP;
             ServerPorttextBox.Text = PORT_NO.ToString();
-            /*IPAddress[] localAdd = Dns.GetHostAddresses(Dns.GetHostName());
-            foreach (IPAddress address in localAdd)
-            {
-                if (address.AddressFamily == AddressFamily.InterNetwork)
-                {
-                    ServerIPtextBox.Text = address.ToString();
-                }
-            }*/
         }
-
-        /*private void OnKeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                //SelectNextControl(ActiveControl, true, true, true, true);
-                StartButton_Click(sender, e);
-                e.Handled = true;
-            }
-        }*/
 
         private void StartButton_Click(object sender, EventArgs e)
         {
@@ -81,27 +60,11 @@ namespace TCPIP_Server_Form
             STR = new StreamReader(client.GetStream());
             STW.AutoFlush = true;
             backgroundWorker1.RunWorkerAsync();
-            backgroundWorker2.WorkerSupportsCancellation = true;
-
-            #region Alternate Test
-            /*nwStream = client.GetStream();
-            buffer = new byte[client.ReceiveBufferSize];
-            bytesRead = nwStream.Read(buffer, 0, client.ReceiveBufferSize);
-            string dataReceived = Encoding.ASCII.GetString(buffer, 0, bytesRead);
-            MessagetextBox.AppendText("CLIENT: " + dataReceived + newLine);*/
-            #endregion
+            backgroundWorker2.WorkerSupportsCancellation = true; 
         }
 
         private void SendButton_Click(object sender, EventArgs e)
         {
-            #region Alternate Test
-            /*string textToSend = SendChattextBox.Text;
-            byte[] bytesToSend = ASCIIEncoding.ASCII.GetBytes(textToSend);
-            SendChattextBox.Text = "";
-            MessagetextBox.AppendText("SENDING: " + textToSend + newLine);
-            nwStream.Write(bytesToSend, 0, textToSend.Length);*/
-            #endregion
-
             if (SendChattextBox.Text != "")
             {
                 TextToSend = SendChattextBox.Text;
@@ -119,7 +82,6 @@ namespace TCPIP_Server_Form
             listener.Stop();
             this.Close();
         }
-
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
             while (client.Connected)
@@ -154,15 +116,5 @@ namespace TCPIP_Server_Form
             
             backgroundWorker2.CancelAsync();
         }
-
-        /*private void SendChattextBox_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                SendButton.PerformClick();
-                e.Handled = true;
-                e.SuppressKeyPress = true;
-            }
-        }*/
     }
 }
