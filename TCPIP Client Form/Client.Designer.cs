@@ -43,9 +43,9 @@
             // 
             // StopButton
             // 
-            this.StopButton.Location = new System.Drawing.Point(322, 226);
+            this.StopButton.Location = new System.Drawing.Point(372, 135);
             this.StopButton.Name = "StopButton";
-            this.StopButton.Size = new System.Drawing.Size(125, 23);
+            this.StopButton.Size = new System.Drawing.Size(75, 35);
             this.StopButton.TabIndex = 17;
             this.StopButton.Text = "Terminate Connection";
             this.StopButton.UseVisualStyleBackColor = true;
@@ -61,7 +61,7 @@
             // 
             // SendButton
             // 
-            this.SendButton.Location = new System.Drawing.Point(372, 56);
+            this.SendButton.Location = new System.Drawing.Point(372, 54);
             this.SendButton.Name = "SendButton";
             this.SendButton.Size = new System.Drawing.Size(75, 23);
             this.SendButton.TabIndex = 15;
@@ -129,9 +129,10 @@
             // 
             // Client
             // 
+            this.AcceptButton = this.SendButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(459, 256);
+            this.ClientSize = new System.Drawing.Size(459, 227);
             this.Controls.Add(this.StopButton);
             this.Controls.Add(this.MessagetextBox);
             this.Controls.Add(this.SendButton);
@@ -141,6 +142,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ClientIPtextBox);
             this.Controls.Add(this.label1);
+            this.KeyPreview = true;
             this.Name = "Client";
             this.Text = "Form1";
             this.ResumeLayout(false);

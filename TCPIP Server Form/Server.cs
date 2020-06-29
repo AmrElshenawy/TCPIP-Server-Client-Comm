@@ -18,30 +18,65 @@ namespace TCPIP_Server_Form
         string newLine = Environment.NewLine;
         public TcpListener listener;
         private TcpClient client;
-        public NetworkStream nwStream;
-        public byte[] buffer;
-        public int bytesRead;
+        //public NetworkStream nwStream;
+        //public byte[] buffer;
+        //public int bytesRead;
         public StreamReader STR;
         public StreamWriter STW;
         public string receive;
         public string TextToSend;
+        public const string SERVER_IP = "127.0.0.1";
+        public const int PORT_NO = 5000;
 
-            
+
         public Server()
         {
             InitializeComponent();
             this.Text = "SERVER";
-            
+            ServerIPtextBox.Text = SERVER_IP;
+            ServerPorttextBox.Text = PORT_NO.ToString();
+            /*IPAddress[] localAdd = Dns.GetHostAddresses(Dns.GetHostName());
+            foreach (IPAddress address in localAdd)
+            {
+                if (address.AddressFamily == AddressFamily.InterNetwork)
+                {
+                    ServerIPtextBox.Text = address.ToString();
+                }
+            }*/
         }
+
+        /*private void OnKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                //SelectNextControl(ActiveControl, true, true, true, true);
+                StartButton_Click(sender, e);
+                e.Handled = true;
+            }
+        }*/
 
         private void StartButton_Click(object sender, EventArgs e)
         {
-            IPAddress localAdd = IPAddress.Parse(ServerIPtextBox.Text);
-            listener = new TcpListener(localAdd, int.Parse(ServerPorttextBox.Text));
+            try
+            {
+                IPAddress localAdd = IPAddress.Parse(ServerIPtextBox.Text); 
+                listener = new TcpListener(IPAddress.Any, int.Parse(ServerPorttextBox.Text));
+            }
+            catch (Exception ex)
+            {
+                MessagetextBox.AppendText(ex.Message.ToString());
+                MessageBox.Show(ex.Message.ToString());
+                this.Close();
+            } 
+            
             StartButton.Enabled = false;
             MessagetextBox.AppendText("Listening..." + newLine);
             listener.Start();
             client = listener.AcceptTcpClient();
+            if (client.Connected)
+            {
+                MessagetextBox.AppendText("Client connected." + newLine);
+            }
             STW = new StreamWriter(client.GetStream());
             STR = new StreamReader(client.GetStream());
             STW.AutoFlush = true;
@@ -78,6 +113,8 @@ namespace TCPIP_Server_Form
         private void StopButton_Click(object sender, EventArgs e)
         {
             MessagetextBox.AppendText("Connection Terminated");
+            backgroundWorker1.WorkerSupportsCancellation = true;
+            backgroundWorker1.CancelAsync();
             client.Close();
             listener.Stop();
             this.Close();
@@ -98,15 +135,34 @@ namespace TCPIP_Server_Form
 
         private void backgroundWorker2_DoWork(object sender, DoWorkEventArgs e)
         {
-            if (client.Connected)
+            try
             {
-                STW.WriteLine(TextToSend);
-                this.MessagetextBox.Invoke(new MethodInvoker(delegate ()
+                if (client.Connected)
                 {
-                    MessagetextBox.AppendText("SENDING: " + TextToSend + newLine);
-                }));
+                    STW.WriteLine(TextToSend);
+                    this.MessagetextBox.Invoke(new MethodInvoker(delegate ()
+                    {
+                        MessagetextBox.AppendText("SENDING: " + TextToSend + newLine);
+                    }));
+                }
             }
+            catch(Exception ex)
+            {
+                MessageBox.Show("No client detected");
+                this.Close();
+            }
+            
             backgroundWorker2.CancelAsync();
         }
+
+        /*private void SendChattextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                SendButton.PerformClick();
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
+        }*/
     }
 }

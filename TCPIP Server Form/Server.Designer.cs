@@ -93,7 +93,7 @@
             // 
             // SendButton
             // 
-            this.SendButton.Location = new System.Drawing.Point(375, 48);
+            this.SendButton.Location = new System.Drawing.Point(375, 46);
             this.SendButton.Name = "SendButton";
             this.SendButton.Size = new System.Drawing.Size(75, 23);
             this.SendButton.TabIndex = 6;
@@ -111,9 +111,9 @@
             // 
             // StopButton
             // 
-            this.StopButton.Location = new System.Drawing.Point(325, 221);
+            this.StopButton.Location = new System.Drawing.Point(375, 116);
             this.StopButton.Name = "StopButton";
-            this.StopButton.Size = new System.Drawing.Size(125, 23);
+            this.StopButton.Size = new System.Drawing.Size(75, 35);
             this.StopButton.TabIndex = 8;
             this.StopButton.Text = "Terminate Connection";
             this.StopButton.UseVisualStyleBackColor = true;
@@ -129,9 +129,10 @@
             // 
             // Server
             // 
+            this.AcceptButton = this.SendButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(462, 256);
+            this.ClientSize = new System.Drawing.Size(462, 219);
             this.Controls.Add(this.StopButton);
             this.Controls.Add(this.MessagetextBox);
             this.Controls.Add(this.SendButton);
@@ -141,6 +142,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ServerIPtextBox);
             this.Controls.Add(this.label1);
+            this.KeyPreview = true;
             this.Name = "Server";
             this.Text = "Form1";
             this.ResumeLayout(false);

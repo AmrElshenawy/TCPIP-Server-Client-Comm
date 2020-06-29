@@ -12,3 +12,6 @@ I:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPI
 I:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server\obj\Debug\TCPIP Server.csproj.CoreCompileInputs.cache
 I:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server\obj\Debug\TCPIP Server.exe
 I:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server\obj\Debug\TCPIP Server.pdb
+G:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server\bin\Debug\TCPIP Server.exe.config
+G:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server\obj\Debug\TCPIP Server.exe
+G:\Documents\Personal Files\C# Projects\server client test backgroundworker\TCPIP Server\TCPIP Server\obj\Debug\TCPIP Server.pdb
