@@ -17,8 +17,10 @@ namespace TCPIP_Client_Form
     {
         string newLine = Environment.NewLine;
         public TcpClient client;
-        const string SERVER_IP = "127.0.0.1";
-        const int PORT_NO = 5000;
+        //public const string SERVER_IP = "192.168.81.48";
+        //public const int PORT_NO = 5000;
+        public string SERVER_IP;
+        public int PORT_NO;
         public StreamReader STR;
         public StreamWriter STW;
         public string receive;
@@ -35,7 +37,7 @@ namespace TCPIP_Client_Form
         {
             try
             {
-                client = new TcpClient(SERVER_IP, PORT_NO);
+                client = new TcpClient(ClientIPtextBox.Text, int.Parse(ClientPorttextBox.Text));
             }
             catch(Exception)
             {

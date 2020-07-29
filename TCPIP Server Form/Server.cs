@@ -22,8 +22,10 @@ namespace TCPIP_Server_Form
         public StreamWriter STW;
         public string receive;
         public string TextToSend;
-        public const string SERVER_IP = "127.0.0.1";
-        public const int PORT_NO = 5000;
+        //public const string SERVER_IP = "127.0.0.1";
+        //public const int PORT_NO = 5000;
+        public string SERVER_IP;
+        public int PORT_NO;
 
 
         public Server()
