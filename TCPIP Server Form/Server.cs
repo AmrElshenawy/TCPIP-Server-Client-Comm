@@ -77,12 +77,29 @@ namespace TCPIP_Server_Form
 
         private void StopButton_Click(object sender, EventArgs e)
         {
-            MessagetextBox.AppendText("Connection Terminated");
+            MessagetextBox.AppendText("Connection Terminated" + newLine);
             backgroundWorker1.WorkerSupportsCancellation = true;
             backgroundWorker1.CancelAsync();
-            client.Close();
-            listener.Stop();
-            this.Close();
+            try
+            {
+                client.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("No client connected to terminate!");
+            }
+
+            try
+            {
+                listener.Stop();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("No server initiated to terminate!");
+            }
+            
+            StartButton.Enabled = true;
+            //this.Close();
         }
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {

@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.960
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPIP Server", "TCPIP Server\TCPIP Server.csproj", "{2AA7CD1A-B7B4-4929-B01B-4B4767F910FD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPIP Client", "TCPIP Client\TCPIP Client.csproj", "{11101F06-4550-4868-B34B-CEC238A95520}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPIP Server Form", "TCPIP Server Form\TCPIP Server Form.csproj", "{DB1D4430-8C8F-4BC8-8B88-9ACF81A659E3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPIP Client Form", "TCPIP Client Form\TCPIP Client Form.csproj", "{C6ED10E7-609B-4F35-B547-F00727EFE80C}"
@@ -17,14 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2AA7CD1A-B7B4-4929-B01B-4B4767F910FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2AA7CD1A-B7B4-4929-B01B-4B4767F910FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2AA7CD1A-B7B4-4929-B01B-4B4767F910FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2AA7CD1A-B7B4-4929-B01B-4B4767F910FD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{11101F06-4550-4868-B34B-CEC238A95520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{11101F06-4550-4868-B34B-CEC238A95520}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{11101F06-4550-4868-B34B-CEC238A95520}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{11101F06-4550-4868-B34B-CEC238A95520}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DB1D4430-8C8F-4BC8-8B88-9ACF81A659E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DB1D4430-8C8F-4BC8-8B88-9ACF81A659E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB1D4430-8C8F-4BC8-8B88-9ACF81A659E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
